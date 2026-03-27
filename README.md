@@ -10,4 +10,5 @@ This repository keeps track of my progress and my commits in javascript30 challe
 - Day 2 JS and CSS Clock
 
 ## Notes
-All projects are built by me while following the javascript30 course made by Wes Bos.
+All projects are built by me 
+while following the javascript30 course made by Wes Bos.
