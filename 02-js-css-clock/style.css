@@ -8,16 +8,17 @@ html {
 
 body {
     margin: 0;
-    font-size: 2rem;
     display: flex;
     flex: 1;
     min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .clock {
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     border: 20px solid white;
     border-radius: 50%;
     margin: 50px auto;
@@ -29,7 +30,10 @@ body {
     inset 0 0 10px black,
     0 0 10px rgba(0,0,0,0.2);
 }
-
+.time span {
+    font-size: 8rem;
+    font-weight: bold;
+}
 .clock-face {
     position: relative;
     width: 100%;
@@ -39,12 +43,34 @@ body {
 
 .hand {
     width: 50%;
-    height: 6px;
-    background: black;
     position: absolute;
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.60, 1);
+}
+.hour-hand {
+    background: black;
+    height: 7px;
+    border-radius: 10px 0 0 10px;
+}
+.min-hand {
+    background: #333333;
+    height: 6px;
+    border-radius: 10px 0 0 10px;
+}
+.second-hand {
+    background: rgb(169, 98, 5);
+    height: 4.5px;
+    border-radius: 10px 0 0 10px;
+}
+.time span[data-list='second'] {
+    color: rgb(169, 98, 5);
+}
+.time span[data-list='minute'] {
+    color: #333333;
+}
+.time span[data-list='hour'] {
+    color: black;
 }
