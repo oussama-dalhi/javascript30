@@ -1,5 +1,5 @@
 html {
-    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     background-size: cover;
     font-family: 'helvetica neue';
     text-align: center;
@@ -56,21 +56,29 @@ body {
     border-radius: 10px 0 0 10px;
 }
 .min-hand {
-    background: #333333;
+    background: #fff;
     height: 6px;
     border-radius: 10px 0 0 10px;
 }
 .second-hand {
-    background: rgb(169, 98, 5);
+    /* background: rgb(169, 98, 5); */
+    background: #ff4d4d;
     height: 4.5px;
     border-radius: 10px 0 0 10px;
 }
 .time span[data-list='second'] {
-    color: rgb(169, 98, 5);
+    /* color: rgb(169, 98, 5); */
+    color: #ff4d4d;
 }
 .time span[data-list='minute'] {
-    color: #333333;
+    color: #fff;
 }
 .time span[data-list='hour'] {
     color: black;
+}
+.greet p {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
