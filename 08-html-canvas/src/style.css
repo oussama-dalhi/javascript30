@@ -1,0 +1,25 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas {
+    display: block;
+    cursor: pointer;
+}
+h1 {
+    position: absolute;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    right: -10px;
+    background: linear-gradient(45deg, red, blue);
+}
